@@ -13,12 +13,3 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
-
-.idea/
-data/
-firefox/
-sauce-connect/
-vendor/
-
-# ignore all the json file from the project
-**.json
