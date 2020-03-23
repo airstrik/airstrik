@@ -4,7 +4,7 @@ go 1.13
 
 require (
 	cloud.google.com/go v0.53.0
-	github.com/gin-gonic/gin v1.5.0
+	github.com/gin-gonic/gin v1.6.0
 	github.com/go-playground/universal-translator v0.17.0 // indirect
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/golang/protobuf v1.3.3 // indirect
