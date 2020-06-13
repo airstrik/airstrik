@@ -9,9 +9,7 @@ import (
 	"log"
 )
 
-
-
-func CreateUserByMobileNo(ctx *config.Context,mobile string, firstName string, lastName string) *entities.User {
+func CreateUserByMobileNo(ctx *config.Context, mobile string, firstName string, lastName string) *entities.User {
 	if !utils2.IsValidateMobileNo(mobile) {
 		panic(AdminError.InvalidMobileNo())
 	}
@@ -20,11 +18,11 @@ func CreateUserByMobileNo(ctx *config.Context,mobile string, firstName string, l
 
 	user := &entities.User{
 		MobileVerified: false,
-		EmailVerified: false,
-		Mobile: mobile,
-		FirstName: firstName,
-		LastName: lastName,
-		Status: constant.UserInvited,
+		EmailVerified:  false,
+		Mobile:         mobile,
+		FirstName:      firstName,
+		LastName:       lastName,
+		Status:         constant.UserInvited,
 	}
 	ctx.DB.Create(user)
 	//ctx.DB.DB.Model(user).Update("CreatedAt", time.Now())

@@ -5,19 +5,19 @@ import (
 	"github.com/airstrik/gobase/pkg/server"
 	"os"
 )
+
 var (
 	Env string
 	Srv *server.Server
 )
 
-func init()  {
+func init() {
 	Env = os.Getenv("ENV")
 	Srv = server.GetServer("Airstrik", 9001)
 	//Srv
 }
 
-
-func main()  {
+func main() {
 	// Register the Api for the Service from router
 	Srv.RegisterRoute("/admin/{VersionId}", route.AdminRoute)
 	Srv.RegisterRoute("/signin/{VersionId}", route.SignInRoute)

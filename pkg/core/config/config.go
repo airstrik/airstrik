@@ -18,7 +18,7 @@ var env = os.Getenv("_ENV_")
 var Config = initConfig()
 
 func initConfig() *Configuration {
-	conf :=  &Configuration{fileLoadStatus: false}
+	conf := &Configuration{fileLoadStatus: false}
 	loadDBConfig(conf)
 	return conf
 }
@@ -47,7 +47,6 @@ func (c *Configuration) Get(name string) interface{} {
 	result := c.config[name]
 	return result
 }
-
 
 func loadConfiguration() interface{} {
 	var config interface{}

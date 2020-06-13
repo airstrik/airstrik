@@ -7,10 +7,10 @@ import (
 )
 
 type Browser struct {
-	BrowserId string
-	Type      string
+	BrowserId    string
+	Type         string
 	ChildBrowser []Browser
-	wd selenium.WebDriver
+	wd           selenium.WebDriver
 }
 
 func NewBrowser(browserType string) *Browser {
@@ -22,14 +22,13 @@ func NewBrowser(browserType string) *Browser {
 	caps := selenium.Capabilities{"browserName": browserType}
 	wd, _ := selenium.NewRemote(caps, "")
 
-	return &Browser{BrowserId: uuid, Type: browserType, wd :wd}
+	return &Browser{BrowserId: uuid, Type: browserType, wd: wd}
 }
 
 func (b *Browser) Navigate(url string) {
 	fmt.Println("Navigating to the URl for the Testing " + url)
 	b.wd.Get(url)
 }
-
 
 func (b *Browser) Close() {
 	fmt.Print("Tapering Down the Browser")

@@ -9,7 +9,7 @@ import (
 	"net/http"
 )
 
-func CreateAccount(w http.ResponseWriter, r *http.Request)  {
+func CreateAccount(w http.ResponseWriter, r *http.Request) {
 	ctx := r.Context().Value("AccountCtx").(*config.Context)
 	log.Print("Log from the Get Account")
 
@@ -31,7 +31,7 @@ func CreateAccount(w http.ResponseWriter, r *http.Request)  {
 }
 
 // Get the Account from the database
-func GetAccount(w http.ResponseWriter, r *http.Request)  {
+func GetAccount(w http.ResponseWriter, r *http.Request) {
 	log.Print("Log from the Get Account")
 
 }

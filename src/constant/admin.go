@@ -1,20 +1,19 @@
 package constant
 
-
 type UserStatus string
 
 const (
-	UserActive UserStatus = "Active"
-	UserInActive UserStatus = "InActive"
-	UserDeleted UserStatus = "Deleted"
+	UserActive      UserStatus = "Active"
+	UserInActive    UserStatus = "InActive"
+	UserDeleted     UserStatus = "Deleted"
 	UserNotVerified UserStatus = "NotVerified"
-	UserInvited UserStatus = "Invited"
+	UserInvited     UserStatus = "Invited"
 )
 
 type GroupStatus string
 
 const (
-	GroupActive UserStatus = "Active"
+	GroupActive   UserStatus = "Active"
 	GroupInActive UserStatus = "InActive"
-	GroupDeleted UserStatus = "Deleted"
+	GroupDeleted  UserStatus = "Deleted"
 )

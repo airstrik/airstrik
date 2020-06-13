@@ -1,5 +1,5 @@
 package engine
 
-func HandleSuit(){
+func HandleSuit() {
 
 }
