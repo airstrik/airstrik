@@ -9,7 +9,7 @@ require (
 	github.com/go-chi/chi v4.1.1+incompatible
 	github.com/google/go-github/v27 v27.0.6 // indirect
 	github.com/google/uuid v1.1.1
-	github.com/jinzhu/gorm v1.9.12
+	github.com/jinzhu/gorm v1.9.16
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.1 // indirect
 	github.com/tebeka/selenium v0.9.9
