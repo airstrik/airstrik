@@ -6,7 +6,7 @@ require (
 	cloud.google.com/go v0.53.0 // indirect
 	github.com/airstrik/gobase v0.0.0-20200603175002-f663aa658ea1
 	github.com/gin-gonic/gin v1.6.3
-	github.com/go-chi/chi v4.1.1+incompatible
+	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/google/go-github/v27 v27.0.6 // indirect
 	github.com/google/uuid v1.1.1
 	github.com/jinzhu/gorm v1.9.12
