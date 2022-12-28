@@ -10,10 +10,10 @@ import (
 )
 
 type SignUp struct {
-	MobileNo string
-	EmailId string
+	MobileNo  string
+	EmailId   string
 	FirstName string
-	LastName string
+	LastName  string
 }
 
 func SignUpMobile(w http.ResponseWriter, r *http.Request) {

@@ -7,7 +7,6 @@ func SuppressError(err error, arg ...string) {
 	panic(err)
 }
 
-
 func getFrame(skipFrames int) runtime.Frame {
 	// We need the frame at index skipFrames+2, since we never want runtime.Callers and getFrame
 	targetFrameIndex := skipFrames + 2

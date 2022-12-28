@@ -5,12 +5,11 @@ import (
 	"github.com/airstrik/gobase/pkg/utils"
 )
 
-
 func GenerateAccountId() string {
 	return utils.ShortUUID("ac")
 }
 
-func CreateAccount(accountId string, name string,email string, logo string) *entities.Account {
+func CreateAccount(accountId string, name string, email string, logo string) *entities.Account {
 	account := &entities.Account{
 		Id:         accountId,
 		DomainName: accountId,

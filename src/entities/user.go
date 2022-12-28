@@ -5,7 +5,6 @@ import (
 	"github.com/airstrik/gobase/pkg/schema/system"
 )
 
-
 type User struct {
 	system.BaseModel
 	Id             string `gorm:"primary_key;AUTO_INCREMENT"`

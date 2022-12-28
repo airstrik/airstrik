@@ -2,12 +2,11 @@ package route
 
 import "github.com/go-chi/chi"
 
-
-func PublicRoute(r chi.Router){
+func PublicRoute(r chi.Router) {
 	r.Post("/signup", CreateAccount)
 }
 
-func AccountRoute(r chi.Router){
+func AccountRoute(r chi.Router) {
 	r.Post("/signup", CreateAccount)
 	r.Get("/", GetAccount)
 	//r.Get("/", GetAccount)
@@ -30,11 +29,11 @@ func AccountRoute(r chi.Router){
 }
 
 // AdminRouter : will redirect all the Account Based service route file
-func AdminRoute(r chi.Router){
+func AdminRoute(r chi.Router) {
 }
 
 // SignInRoute : will redirect all the sign in Based service route file
-func SignInRoute(r chi.Router){
+func SignInRoute(r chi.Router) {
 	//Sign up Url for the Application (New users)
 	r.Post("/signup/mobile", SignUpMobile)
 	r.Post("/signup/email", SignUpMobile)
@@ -46,11 +45,10 @@ func SignInRoute(r chi.Router){
 }
 
 // UserRoute : will redirect all the user Based service route file
-func UserRoute(r chi.Router){
+func UserRoute(r chi.Router) {
 	r.Post("/", CreateUser)
 	r.Get("/", GetUserList)
 	r.Get("/{UserId}", GetUser)
 	r.Put("/{UserId}", UpdateUser)
 	r.Delete("/{UserId}", DeleteUser)
 }
-

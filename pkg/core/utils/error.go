@@ -5,7 +5,7 @@ import (
 	"log"
 )
 
-func ErrorHandling(err error){
-	log.Print("Error Have been raised from the following Method "+ helper.MyCaller())
+func ErrorHandling(err error) {
+	log.Print("Error Have been raised from the following Method " + helper.MyCaller())
 	log.Fatal(err)
 }
